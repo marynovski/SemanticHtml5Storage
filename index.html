@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <!-- **META TAGS**
+            * Meta tags free analyzer: https://www.metatags.org/seo-tips/why-use-meta-tags/metatags-analyzer/
+        -->
+
+        <!-- **META CHARSET TAG**
+            * Case insensitive
+        -->
+        <meta charset="utf-8"> <!-- case insensitive -->
+
+        <!-- **DESCRIPTION META TAG**
+            * See more on: https://www.metatags.org/all-meta-tags-overview/the-important-meta-tags/meta-name-description/
+            * Always add your meta name Description tag in the HEAD section of your site.
+            * Google typically shows max. 165 characters (keep it under 160).
+            * It shows up in the search engine results pages (SERP) and in Browser Tabs.
+        -->
+        <meta name="description" content="Zbiór linków, opisów i przykładów wykorzystania semantycznego HTML w wersji 5.">
+
+        <!-- **TITLE TAG**
+            * See more on: https://www.metatags.org/all-meta-tags-overview/the-important-meta-tags/html-tag-title-tag/
+            * Google typically shows 55-64 characters (keep it under 60).
+            * Most important within the first 8 words
+            * Optimal format is: Primary Keyword - Secondary Keyword | Brand Name
+         -->
+        <title>Semantic Html5 - storage | Kamil Marynowski</title>
+    </head>
+    <body>
+        <header id="header">
+            <h1>Semantyczny HTML5</h1>
+            <p>
+                Zbiór linków i przykładów wykorzystania semantycznego HTML5.
+            </p>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="#">Strona główna</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="page-content">
+            <article class="post">
+                <header class="post-header">
+                    <h2>Nagłówek artykułu</h2>
+                </header>
+                <p class="post-content">
+                    Artykuł o niczym, bo niby o czym miałby być?
+                </p>
+                <figure>
+                    <img src="img/zad2cz1.PNG" alt="Fajny obrazek">
+                    <figcaption>Podpis obrazka</figcaption>
+                </figure>
+                <picture>
+                    <source media="(min-width: 45em)" srcset="large-1.jpg 1x, large-2.jpg 2x">
+                    <source media="(min-width: 18em)" srcset="med-1.jpg 1x, med-2.jpg 2x">
+                    <source srcset="small-1.jpg 1x, small-2.jpg 2x">
+                    <img src="small-1.jpg" alt="">
+                </picture>
+            </article>
+            <section id="forms">
+                <header id="forms-section-header">
+                    <h2>Formsy:</h2>
+                </header>
+                <div id="forms-box">
+                    <form action="search.php" method="post">
+                        <p>
+                            <label for="search-input">Search</label>
+                            <input id="search-input" type="search" name="q" placeholder="Szukaj...">
+                        </p>
+                        <p>
+                            <label for="email-input">Search</label>
+                            <input id="email-input" type="email" name="q" placeholder="Szukaj...">
+                        </p>
+                        <p>
+                            <label for="color-input">Search</label>
+                            <input id="color-input" type="color" name="q">
+                        </p>
+                        <p>
+                            <label for="url-input">Search</label>
+                            <input id="url-input" type="url" name="q" placeholder="Szukaj...">
+                        </p>
+                        <p>
+                            <button type="submit" name="submit">Wyślij</button>
+                        </p>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            Stopa &copy; 2021
+        </footer>
+    </body>
+</html>
